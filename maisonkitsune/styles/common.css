@@ -1,0 +1,55 @@
+/* header */
+header {}
+header .top {
+    background:#10304D; height:45px;
+    text-align:center;
+}
+header .top > p {
+    font-size:0.875rem; line-height:45px;
+    color:#fff;
+}
+header .top .map_btn {
+    display:flex; position:absolute; right:0; top:10px;
+    align-items: center;
+}
+header .top .map_btn img {}
+header .top .map_btn p {
+    font-size:0.875rem; color:#fff;
+    margin:0 50px 0 15px;
+}
+/* header nav */
+header nav {position:absolute; z-index:999;}
+header nav h1 {width:200px; height:50px;}
+header nav h1 img {width:100%;}
+header nav > ul {
+    display:flex;
+}
+header nav > ul > li {}
+header nav > ul > li h1 {}
+header nav > ul > li h1 a {}
+header nav > ul > li h1 a {}
+header nav > ul > li h1 a .sub {}
+header nav > ul > li h1 a .sub .left {}
+header nav > ul > li h1 a .sub .left .content {}
+header nav > ul > li h1 a .sub .left .content h2 {}
+header nav > ul > li h1 a .sub .left .content h2 a {}
+header nav > ul > li h1 a .sub .left .content ul {}
+header nav > ul > li h1 a .sub .left .content ul li {}
+header nav > ul > li h1 a .sub .left .content ul li a {}
+/* sub1 */
+header nav > ul > li h1 a .sub1 .right .img1 {}
+header nav > ul > li h1 a .sub1 .right .img2 {}
+header nav > ul > li h1 a .sub1 .right .img3 {}
+header nav > ul > li h1 a .sub1 .right .img4 {}
+/* sub2 */
+header nav > ul > li h1 a .sub2 .right .img1 {}
+header nav > ul > li h1 a .sub2 .right .img2 {}
+header nav > ul > li h1 a .sub2 .right .img3 {}
+header nav > ul > li h1 a .sub2 .right .img4 {}
+/* main */
+main {}
+main .bg {height:100vh; width:100%; overflow:hidden;}
+main .bg1 {
+    width:100%;
+}
+main .bg1 video {width:1920px;}
