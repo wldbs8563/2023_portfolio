@@ -1,4 +1,5 @@
 /* header */
+body {min-width:1000px;}
 header {}
 header .h_top {
     background:#10304D; height:45px;
@@ -74,21 +75,77 @@ header .h_btm nav > ul > li .sub2 .right .image1 {background:url(../images/item_
 header .h_btm nav > ul > li .sub2 .right .image2 {background:url(../images/item_54.jpg);}
 header .h_btm nav > ul > li .sub2 .right .image3 {background:url(../images/item_55.jpg);}
 header .h_btm nav > ul > li .sub2 .right .image4 {background:url(../images/item_56.jpg);}
+/* sub3 */
+header .h_btm nav > ul > li .sub3 .right .image1 {background:url(../images/collabo1.jpg);}
+header .h_btm nav > ul > li .sub3 .right .image2 {background:url(../images/collabo3.jpg);}
+header .h_btm nav > ul > li .sub3 .right .image3 {background:url(../images/collabo1.jpg);}
+header .h_btm nav > ul > li .sub3 .right .image4 {background:url(../images/collabo3.jpg);}
 /* icon */
 header .h_btm .btm_right {
     position:absolute; right:50px;
     display:flex;
 }
 header .h_btm .btm_right li {}
-header .h_btm .btm_right li a {margin-left:15px;}
+header .h_btm .btm_right li a {margin-left:15px; line-height:70px;}
+/* header .h_btm .btm_right li a:first-child {line-height:0;} */
 header .h_btm .btm_right li:first-child a {margin-left:0;}
-/* search_box */
-header .h_btm .btm_right li .search_box {position:absolute;}
-header .h_btm .btm_right li .search_box #search_frm {}
-header .h_btm .btm_right li .search_box #search_frm fieldset {}
-/* main */
-main {}
-main .bg {height:100vh; width:100%; overflow:hidden;}
-main .bg1 {}
-main .bg1 video {width:100%;}
-
+/* search */
+header .h_btm .btm_right li #search_frm {line-height:70px;}
+header .h_btm .btm_right li #search_frm fieldset {
+    display:flex; padding-top:18px;
+}
+header .h_btm .btm_right li #search_frm fieldset input {
+    width:190px;
+} 
+header .h_btm .btm_right li #search_frm fieldset #search_btn {
+    background:none;
+} 
+/* login */
+header .h_btm .btm_right li .login_box {
+    background:#f4f4f4;
+    position:absolute; top:70px; right:-50px; z-index:900;
+    width:400px; height:450px; padding:30px 0 0 50px;
+}
+header .h_btm .btm_right li .login_box > p {
+    display:flex; align-items:center;
+}
+header .h_btm .btm_right li .login_box > p img {}
+header .h_btm .btm_right li .login_box > p span {
+    padding-left:15px;
+    color:#10304D; font-weight:700;
+}
+header .h_btm .btm_right li .login_box #loginFrm {}
+header .h_btm .btm_right li .login_box #loginFrm fieldset {
+    display:flex; flex-flow:column nowrap;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset > input {
+    border:1px solid #10304D;
+    width:300px; height:35px; margin-top:20px;
+    font-size:0.875rem; padding-left:20px;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset #id {}
+header .h_btm .btm_right li .login_box #loginFrm fieldset #pw {
+    margin-top:10px;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset a {
+    margin-top:10px; font-size:0.8rem; text-decoration: underline;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset label {margin:22px 0;}
+header .h_btm .btm_right li .login_box #loginFrm fieldset label > input {appearance:none;}
+header .h_btm .btm_right li .login_box #loginFrm fieldset label span {
+    background:url(../images/icon_uncheck.png) no-repeat;
+    padding-left:30px; color:#aaa; 
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset label input:checked+span {
+    background: url(../images/icon_check.png) no-repeat;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset button {
+    background:none; margin-top: 10px;
+    width:300px; height:50px; background:#fff;
+    border:1px solid #10304D; color: #10304D;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset button:hover {
+    background:#10304D; color:#fff;
+}
+header .h_btm .btm_right li .login_box #loginFrm fieldset #loginBtn {}
+header .h_btm .btm_right li .login_box #loginFrm fieldset #joinBtn {}

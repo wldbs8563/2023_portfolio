@@ -12,7 +12,32 @@ nav.forEach(function(t,i,){
         for(let j of sub){j.style.display='none'}
     })
 })
-// sub[1].style.display='none'
-// sub[2].style.display='none'
-// sub[3].style.display='none'
+const login = document.querySelector('.icon .login_box')
+const icon = document.querySelectorAll('.btm_right .icon')
+const icon_img = document.querySelectorAll('.icon > a > img')
+console.log(login, icon, icon_img)
+login.style.display='none'
+icon[0].addEventListener('mouseover',function(){
+    login.style.display='block'
+    icon_img[0].src='./images/icon_user2.png'
+})
+icon[0].addEventListener('mouseout',function(){
+    login.style.display='none'
+    icon_img[0].src='./images/icon_user.png'
+})
+icon[1].addEventListener('mouseover',function(){
+    icon_img[1].src='./images/icon_heart2.png'
+})
+icon[1].addEventListener('mouseout',function(){
+    icon_img[1].src='./images/icon_heart.png'
+})
+icon[2].addEventListener('mouseover',function(){
+    icon_img[2].src='./images/icon_mall2.png'
+})
+icon[2].addEventListener('mouseout',function(){
+    icon_img[2].src='./images/icon_mall.png'
+})
+
+
+
 

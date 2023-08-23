@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메종키츠네</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/common.css">
-    
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
             </a>
         </div>
         <div class="h_btm">
-            <h1><a href="#"><img src="./images/logo.png" alt="MAISON KITSUNE PARIS"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="MAISON KITSUNE PARIS"></a></h1>
             <nav>
                 <ul>
                     <li>
@@ -146,34 +146,64 @@
             </nav>
             <ul class="btm_right">
                 <li>
-                    <a href="#"  id="search_btn"><img src="./images/icon_search.png" alt=""></a>
-                    <div class="search_box">
-                        <form action="#" method="get" id="search_frm">
+                    <form action="#" method="get" id="search_frm">
+                        <fieldset>
+                            <legend class="skip">검색양식</legend>
+                            <input type="text" autofocus placeholder="검색어를 입력해주세요" name="search">
+                            <button type="submit" id="search_btn"><img src="./images/icon_search.png" alt=""></button>
+                        </fieldset>
+                    </form>
+                </li>
+                <li class="icon">
+                    <a href="#"><img src="./images/icon_user.png" alt=""></a>
+                    <div class="login_box">
+                        <p><img src="./images/icon_user.png" alt=""><span>로그인</span></p>
+                        <form action="#" method="post" id="loginFrm">
                             <fieldset>
-                                <legend class="skip">검색양식</legend>
-                                <input type="search" autofocus placeholder="검색어를 입력해 주세요" name="search">
-                                <button type="submit" id="search_btn"><img src="./images/icon_search.png" alt="검색"></button>
+                                <legend class="skip">로그인양식</legend>
+                                <input type="text" name="id" id="id" placeholder="아이디">
+                                <input type="text" name="pw" id="pw" placeholder="비밀번호">
+                                <a href="#">비밀번호를 잊으셨나요?</a>
+                                <label for="auto"><input type="checkbox" id="auto"><span>자동 로그인</span></label>
+                                <button type="submit" id="loginBtn">로그인</button>
+                                <button type="submit" id="joinBtn">계정만들기</button>
                             </fieldset>
                         </form>
                     </div>
                 </li>
-                <li>
-                    <a href="#"><img src="./images/icon_user.png" alt=""></a>
-                </li>
-                <li>
+                <li class="icon">
                     <a href="#"><img src="./images/icon_heart.png" alt=""></a>
                 </li>
-                <li>
+                <li class="icon">
                     <a href="#"><img src="./images/icon_mall.png" alt=""></a>
-                </li>
+                </li class="icon">
             </ul>
         </div>
     </header>
     <main>
-        <div class="bg bg1">
+        <section class="bg bg1">
             <video src="./video/main.mp4" autoplay loop muted></video>
-        </div>
+        </section>
+        <section class="selection">
+            <h1>SELECTION</h1>
+            <div class="swiper" id="selection_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">Slide 1</div>
+                    <div class="swiper-slide slide2">Slide 1</div>
+                    <div class="swiper-slide slide3">Slide 1</div>
+                    <div class="swiper-slide slide4">Slide 1</div>
+                    <div class="swiper-slide slide5">Slide 1</div>
+                    <div class="swiper-slide slide6">Slide 1</div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./script/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const selection_slide = new Swiper('#selection_slide',{
+            slidesPerView:4
+        })
+    </script>
 </body>
 </html>
