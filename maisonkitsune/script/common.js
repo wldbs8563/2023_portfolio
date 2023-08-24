@@ -37,6 +37,75 @@ icon[2].addEventListener('mouseover',function(){
 icon[2].addEventListener('mouseout',function(){
     icon_img[2].src='./images/icon_mall.png'
 })
+const item = document.querySelectorAll('.swiper-slide')
+const txt = document.querySelectorAll('.info')
+console.log(item)
+item.forEach(function(t,i){
+    t.addEventListener('mouseover',function(){
+        txt[i].style.backgroundColor='rgba(255, 255, 255, 0.5)'
+    })
+    t.addEventListener('mouseout',function(){
+        txt[i].style.background='none'
+    })
+})
+const sns = document.querySelectorAll('.sns a img')
+console.log(sns)
+sns[0].addEventListener('mouseover',function(){
+    sns[0].src='./images/icon_set_sns_08.png'
+
+})
+sns[0].addEventListener('mouseout',function(){
+    sns[0].src='./images/icon_set_sns_01.png'
+
+})
+sns[1].addEventListener('mouseover',function(){
+    sns[1].src='./images/icon_set_sns_09.png'
+
+})
+sns[1].addEventListener('mouseout',function(){
+    sns[1].src='./images/icon_set_sns_02.png'
+
+})
+sns[2].addEventListener('mouseover',function(){
+    sns[2].src='./images/icon_set_sns_10.png'
+
+})
+sns[2].addEventListener('mouseout',function(){
+    sns[2].src='./images/icon_set_sns_03.png'
+
+})
+sns[3].addEventListener('mouseover',function(){
+    sns[3].src='./images/icon_set_sns_11.png'
+
+})
+sns[3].addEventListener('mouseout',function(){
+    sns[3].src='./images/icon_set_sns_04.png'
+
+})
+sns[4].addEventListener('mouseover',function(){
+    sns[4].src='./images/icon_set_sns_12.png'
+
+})
+sns[4].addEventListener('mouseout',function(){
+    sns[4].src='./images/icon_set_sns_05.png'
+
+})
+sns[5].addEventListener('mouseover',function(){
+    sns[5].src='./images/icon_set_sns_13.png'
+
+})
+sns[5].addEventListener('mouseout',function(){
+    sns[5].src='./images/icon_set_sns_06.png'
+
+})
+sns[6].addEventListener('mouseover',function(){
+    sns[6].src='./images/icon_set_sns_14.png'
+
+})
+sns[6].addEventListener('mouseout',function(){
+    sns[6].src='./images/icon_set_sns_07.png'
+
+})
 
 
 
