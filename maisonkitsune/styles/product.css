@@ -1,0 +1,62 @@
+main {
+    margin:0 auto;
+}
+main .product {
+    width:1340px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    align-items: start; justify-content:space-between;
+    padding:50px 0;
+}
+main .product #product_slide {
+    width:660px; height:750px;
+}
+main .product #product_slide .swiper-wrapper {}
+main .product #product_slide .swiper-wrapper .slide1 {background:url(../images/product1.jpg);}
+main .product #product_slide .swiper-wrapper .slide2 {background:url(../images/product2.jpg);}
+main .product #product_slide .swiper-wrapper .slide3 {background:url(../images/product3.jpg);}
+main .product #product_slide .swiper-wrapper .slide4 {background:url(../images/product4.jpg);}
+main .product #product_slide .swiper-wrapper .slide5 {background:url(../images/product5.jpg);}
+main .product #product_slide .swiper-wrapper .slide6 {background:url(../images/product6.jpg);}
+main .product #product_slide .swiper-wrapper .swiper-slide {}
+main .product .info {
+    margin-left:50px;
+    display:flex; flex-flow:column nowrap;
+    
+}
+main .product .info h1 {
+    font-size:1.777rem; font-weight:700;
+    margin-top:25px;
+}
+main .product .info .price {
+    font-size:1.777rem; margin:50px 0;
+}
+main .product .info .account {font-size:1.2rem;}
+main .product .info .txt {
+    font-size:1.777rem; margin-top:50px;
+}
+main .product .info .color {}
+main .product .info .color > span 
+{width:40px; height:40px;
+    display:inline-block; border-radius:50%;
+    margin-top:50px;
+}
+main .product .info .color > span:nth-child(1) {background:#212E52;}
+main .product .info .color > span:nth-child(2) {background:#D4D4D6;}
+main .product .info .color > span:nth-child(3) {background:#35734E;}
+main .product .info .color > span:nth-child(4) {background:#2B2A30;}
+main .product .info .color > span:nth-child(5) {background:#7E1745;}
+main .product .info .color > span:nth-child(6) {background:#DEC79E;}
+main .product .info .size {
+    margin:50px 0;
+}
+main .product .info .size > span {
+    font-size:1.777rem; width:50px; height:50px;
+    border:1px solid #000; display:inline-block;
+    text-align: center; line-height:40px;
+}
+main .product .info button {
+    width:550px; height:50px;
+    margin-bottom:20px; border:1px solid #10304D;
+    background:#fff; color: #10304D;
+}
+main .product .info button:hover {background:#10304D; color:;}

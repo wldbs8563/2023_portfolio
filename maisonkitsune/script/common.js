@@ -37,17 +37,6 @@ icon[2].addEventListener('mouseover',function(){
 icon[2].addEventListener('mouseout',function(){
     icon_img[2].src='./images/icon_mall.png'
 })
-const item = document.querySelectorAll('.swiper-slide')
-const txt = document.querySelectorAll('.info')
-console.log(item)
-item.forEach(function(t,i){
-    t.addEventListener('mouseover',function(){
-        txt[i].style.backgroundColor='rgba(255, 255, 255, 0.5)'
-    })
-    t.addEventListener('mouseout',function(){
-        txt[i].style.background='none'
-    })
-})
 const sns = document.querySelectorAll('.sns a img')
 console.log(sns)
 sns[0].addEventListener('mouseover',function(){
@@ -105,6 +94,16 @@ sns[6].addEventListener('mouseover',function(){
 sns[6].addEventListener('mouseout',function(){
     sns[6].src='./images/icon_set_sns_07.png'
 
+})
+const product = document.querySelectorAll('ul > .item')
+console.log(product)
+product.forEach(function(t,i){
+    t.addEventListener('mouseover',function(){
+        txt[i].style.backgroundColor='rgba(255, 255, 255, 0.5)'
+    })
+    t.addEventListener('mouseout',function(){
+        txt[i].style.background='none'
+    })
 })
 
 

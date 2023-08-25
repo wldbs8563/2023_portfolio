@@ -1,0 +1,102 @@
+main {}
+main > h1 {
+    text-align:center;
+    margin:50px 0;
+}
+main > h1 span {
+    color:#aaa;
+    font-size:1.777rem;
+    font-weight:700;
+}
+main h1 em {
+    color:#10304D;
+    font-size:1.777rem;
+    font-weight:700;
+}
+main .title {
+    width:calc(100% - 100px);
+    height:60px; margin:0 auto; display:flex;
+    justify-content:space-between;
+}
+main .title .title_left {}
+main .title .title_left a {
+    line-height:60px; display:flex;
+    align-items:center; display:inline-block;
+}
+main .title .title_left a img {}
+main .title .title_left .filter {
+    background:#f4f4f4; 
+    width:600px; height:350px;
+    display:flex; position:relative;
+    padding:20px 0 0 20px;
+}
+main .title .title_left .filter dl {
+    margin-left:100px;
+}
+main .title .title_left .filter dl:first-child {margin-left:0px;}
+main .title .title_left .filter dl dt {margin-bottom:10px;font-weight:700;}
+main .title .title_left .filter dl dd {margin-bottom:5px;}
+main .title .title_left .filter dl dd input {}
+main .title .title_left .filter button {
+    width:80px; height:40px; position:absolute;
+    right:20px; bottom:20px; background:#fff;
+    border:1px solid #10304D;
+}
+main .title .title_left .filter button:hover {background:#10304D; color:#fff;}
+main .title #list_align {
+    height:30px; margin-top:15px;
+}
+main .title #list_align option {}
+main .list {
+    width:1340px; margin:0 auto;
+    margin-bottom:50px;
+}
+main .list ul {
+    display:flex; flex-flow:row wrap;
+    justify-content:space-between;
+    margin-top:80px;
+}
+main .list ul li {
+    width:320px; height:450px;
+    margin-top:20px;
+}
+main .list ul li .info {
+    width:100%; height:100%;
+    display:block;
+    padding:320px 0 10px 10px;
+}
+main .list ul li .info h1 {
+    font-weight:700; text-overflow:ellipsis; width:300px;
+    margin-top:10px; white-space:nowrap; overflow:hidden;
+}
+main .list ul li .info .price {margin:10px 0;}
+main .list ul li .info .size {}
+main .list ul li .info .size > span {}
+main .list ul li .info .size > span::after {
+    width:1px; height:12px; background:#aaa; display:inline-block;
+    content:''; margin:0 10px;
+}
+main .list ul li .info .size > span:last-child:after {display:none;}
+main .list ul li .info .color {}
+main .list ul li .info .color > span {
+    width:20px; height:20px; border-radius:50%; 
+    display:inline-block; margin-top:10px;
+}main .list ul li .info .color > span:nth-child(1){background:#212E52;}
+main .list ul li .info .color > span:nth-child(2){background:#D4D4D6;}
+main .list ul li .info .color > span:nth-child(3){background:#35734E;}
+main .list ul li .info .color > span:nth-child(4){background:#2B2A30;}
+main .list ul li .info .color > span:nth-child(5){background:#7E1745;}
+main .list ul li .info .color > span:nth-child(6){background:#DEC79E;}
+main .list ul .item1 {background:url(../images/selection1.jpg);}
+main .list ul .item2 {background:url(../images/selection2.jpg);}
+main .list ul .item3 {background:url(../images/selection3.jpg);}
+main .list ul .item4 {background:url(../images/selection4.jpg);}
+main .list ul .item5 {background:url(../images/selection5.jpg);}
+main .list ul .item6 {background:url(../images/selection6.jpg);}
+/* 반응형웹 */
+@media screen and (max-width:1300px){
+    main .list {width:1000px;}
+}
+@media screen and (max-width:900px){
+    main .list {width:700px;}
+}
