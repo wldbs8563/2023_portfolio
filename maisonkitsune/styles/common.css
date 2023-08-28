@@ -201,7 +201,7 @@ footer .f_top .mail #mail_frm fieldset .mail_btn {
     background:#10304D; position:absolute;
     font-weight:700;
 }
-footer .f_top .mail > p {font-size:0.875rem; letter-spacing:-0.02em;}
+footer .f_top .mail > p {font-size:0.875rem; letter-spacing:-0.02em; line-height:40px;}
 footer .f_btm {
     text-align:center;
 }

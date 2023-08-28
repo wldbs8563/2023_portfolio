@@ -27,8 +27,7 @@
             </dl>
             <p></p>
             <div class="mail">
-                <p class="news">이메일 수신 신청을 통해 메종키츠네의 최신 컬렉 션과 신상품, 서비
-                    스 및 이벤트에 대한 다양한 브랜드 소식을 제일 먼저 받아 보세요.
+                <p class="news">이메일 수신 신청을 통해 메종키츠네의 최신 컬렉 션과 신상품, 서비스 및 이벤트에 대한 다양한 브랜드 소식을 제일 먼저 받아 보세요.
                 </p>
                 <form action="#" method="get" id="mail_frm">
                     <fieldset>

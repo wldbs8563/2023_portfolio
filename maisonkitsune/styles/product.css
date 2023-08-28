@@ -49,14 +49,15 @@ main .product .info .color > span:nth-child(6) {background:#DEC79E;}
 main .product .info .size {
     margin:50px 0;
 }
-main .product .info .size > span {
-    font-size:1.777rem; width:50px; height:50px;
+main .product .info .size > a {
+    font-size:1.333rem; width:50px; height:50px;
     border:1px solid #000; display:inline-block;
-    text-align: center; line-height:40px;
+    text-align: center; line-height:45px;
 }
+main .product .info .size > a:hover {background:#10304D; color:#fff;}
 main .product .info button {
     width:550px; height:50px;
     margin-bottom:20px; border:1px solid #10304D;
     background:#fff; color: #10304D;
 }
-main .product .info button:hover {background:#10304D; color:;}
+main .product .info button:hover {background:#10304D; color:#fff;}
