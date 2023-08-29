@@ -5,6 +5,7 @@
         width:auto; height:100%;
     }
 }/* 1500px end */
+body {min-width:1000px;}
 /* main bg */
 main {}
 main .bg {width:100%; overflow:hidden;}
@@ -26,10 +27,15 @@ main .selection #selection_slide .swiper-wrapper a {
 }
 main .selection #selection_slide .swiper-wrapper .swiper-slide {
     width:320px; height:450px;
+    margin-bottom:50px;
 }
 main .selection #selection_slide .swiper-wrapper .swiper-slide:hover {}
 main .selection #selection_slide .swiper-wrapper .swiper-slide .info {
     padding:320px 0 10px 10px; width:100%;
+    background:linear-gradient(358deg, #fff 5%, transparent) !important;
+}
+main .selection #selection_slide .swiper-wrapper .swiper-slide:hover {
+    
 }
 main .selection #selection_slide .swiper-wrapper .swiper-slide .info h1 {
     font-weight:700; text-overflow:ellipsis; width:300px;
@@ -67,7 +73,7 @@ main .shop {
 main .shop .s_left {}
 main .shop .s_left >* {font-weight:700;}
 main .shop .s_left h1 {font-size:5.3rem;}
-main .shop .s_left p {font-size:1.333rem; margin-top:50px;}
+main .shop .s_left p {font-size:1.333rem; margin-top:50px; line-height:30px;}
 main .shop .s_left a {font-size:2.369rem; font-weight:700;}
 main .shop .s_left a img {margin-left:20px;}
 main .shop .s_left p:last-child {

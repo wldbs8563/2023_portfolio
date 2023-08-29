@@ -1,3 +1,4 @@
+body {min-width:1000px;}
 main {}
 main > h1 {
     text-align:center;
@@ -62,7 +63,7 @@ main .list ul li {
 }
 main .list ul li .info {
     width:100%; height:100%;
-    display:block;
+    display:none;
     padding:320px 0 10px 10px;
 }
 main .list ul li .info h1 {
@@ -93,6 +94,9 @@ main .list ul .item3 {background:url(../images/selection3.jpg);}
 main .list ul .item4 {background:url(../images/selection4.jpg);}
 main .list ul .item5 {background:url(../images/selection5.jpg);}
 main .list ul .item6 {background:url(../images/selection6.jpg);}
+main .list ul .item {
+    border-radius:40px 0 20px 0;
+}
 /* 반응형웹 */
 @media screen and (max-width:1300px){
     main .list {width:1000px;}
