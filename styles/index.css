@@ -1,0 +1,35 @@
+/* header */
+body {min-width:1200px;}
+header {}
+header .h_bg {
+    background:#FFF2E7;
+    height:100px; width:calc(100% -100px);
+    border-radius:50px;
+    display:flex; align-items:center;
+    justify-content:space-between;
+    margin:20px;
+}
+header .h_bg .left {
+    display:flex; align-items:center;
+    margin-left:50px;
+}
+header .h_bg .left .yoon {margin-right:20px;}
+header .h_bg .left p { font-size:1.333rem; font-weight:700;}
+header .h_bg .right {
+    margin-right:50px;
+}
+header .h_bg .right a {
+    margin-left:30px; font-size:1.333rem;
+}
+header .h_bg .right a:first-child {margin-left:0;}
+/* main */
+main {}
+main .home {}
+main .home .home_bg {}
+main .home .home_bg .main_img {}
+main .home .home_bg .main_img .home_img {}
+main .home .home_bg .main_img .cloud1 {}
+main .home .home_bg .main_img .cloud2 {}
+main .home .home_bg .main_img .star1 {}
+main .home .home_bg .main_img .star2 {}
+main .home .home_bg .txt {}
