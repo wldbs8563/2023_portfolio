@@ -1,6 +1,9 @@
 /* header */
 body {min-width:1200px;}
-header {}
+header {
+    position:fixed;
+    width:100%; z-index:999; min-width:1200px;
+}
 header .h_bg {
     background:#FFF2E7;
     height:100px; width:calc(100% -100px);
@@ -23,44 +26,138 @@ header .h_bg .right a {
 }
 header .h_bg .right a:first-child {margin-left:0;}
 /* section1 */
-main {background:lime;}
-main .home {
-    background:url(../images/1bg.png);
+main {
+    padding-top:140px;
+}
+main .home_bg {
+    background:#FFF2E7 url(../images/1bg.png);
     background-size:cover;
     overflow:hidden;
     height:100vh;
 }
-main .home .home_bg {
-    background:aqua;
+main .home_bg .home {
     width:1200px; margin:0 auto;
 }
-main .home .home_bg .main_img {
+main .home_bg .home .main_img {
     position:relative;
 }
-main .home .home_bg .main_img .home_img {
-    
+main .home_bg .home .main_img .home_img {
+    margin:20px 0 0 300px;
 }
-main .home .home_bg .main_img .cloud1 {
-    
+main .home_bg .home .main_img .cloud1 {
+    position:absolute; left:50px; top:100px;
+    animation: move 2s linear alternate infinite;
 }
-main .home .home_bg .main_img .cloud2 {
-    
+main .home_bg .home .main_img .cloud2 {
+    position:absolute; left:200px; top:0;
+    animation: move 2s linear alternate-reverse infinite;
 }
-main .home .home_bg .main_img .star1 {
-    
-}
-main .home .home_bg .main_img .star2 {
+main .home_bg .home .main_img .star1 {
+    position:absolute; right:30px; top:50px;
     animation: scale 2s linear alternate infinite;
 }
-main .home .home_bg .txt {
-    font-size:3.157rem;
-    line-height:70px; font-weight:700;
+main .home_bg .home .main_img .star2 {
+    position:absolute; left:290px; top:150px;
+    animation: scale 2s linear alternate infinite;
 }
-@keyframes star {
+main .home_bg .home .txt_title {
+    position:relative;
+}
+main .home_bg .home .txt_title .txt {
+    font-size:3.157rem; position:absolute; z-index:2;
+    line-height:70px; font-weight:700;
+    top:-50px; left:30px;
+}
+main .home_bg .home .txt_title #web_txt {
+    background:url(../images/web.png) repeat-x;
+    width:100%; height:100px;
+    position:absolute; z-index:1;
+    animation:web 100s linear alternate infinite ;
+}
+@keyframes move {
     0% {transform:translateY(0);}
-    100% {transform:translateY(30px);}
+    100% {transform:translateY(20px);}
 }
 @keyframes scale {
     0% {transform:scale(0.5);}
-    100% {transform:scale(1);}
+    100% {transform:scale(0.8);}
+}
+@keyframes web {
+    0% {background-position:0;}
+    100% {background-position:-10000px;}
+}
+/* section2 */
+main .profile_bg {
+    background:#FFF2E7;
+    padding-bottom:100px;
+}
+main .profile_bg .profile {
+    width:1200px; margin:0 auto;
+}
+main .profile_bg .profile .top {
+    display:flex; align-items:center;
+}
+main .profile_bg .profile .top > p {}
+main .profile_bg .profile .top > p img {border-radius:50%;}
+main .profile_bg .profile .top .t_contents {
+    margin-left:68px;
+}
+main .profile_bg .profile .top .t_contents dl {
+    margin-bottom:40px;
+}
+main .profile_bg .profile .top .t_contents dl dt {
+    font-size:1.777rem; font-weight:700;
+    margin-bottom:40px;
+}
+main .profile_bg .profile .top .t_contents dl dd {
+    line-height:30px;
+}
+main .profile_bg .profile .bottom {
+    display:flex; margin-top:20px;
+}
+main .profile_bg .profile .bottom dl {}
+main .profile_bg .profile .bottom dl dt {
+    font-size:1.777rem; font-weight:700;
+    margin-bottom:30px;
+}
+main .profile_bg .profile .bottom dl dd {}
+main .profile_bg .profile .bottom dl dd p {
+    margin-bottom:20px;
+}
+main .profile_bg .profile .bottom dl dd p em {
+    font-size:1.333rem; font-weight:500;
+    width:70px; display:inline-block;
+}
+main .profile_bg .profile .bottom dl dd p span {
+    font-size:1.2rem; margin-left:100px;
+}
+main .profile_bg .profile .bottom .skill_title {
+    margin-left:90px;
+}
+main .profile_bg .profile .bottom .skill_title > p {
+    font-size:1.777rem; font-weight:700;
+    margin-bottom:30px;
+}
+main .profile_bg .profile .bottom .skill_title .skill {
+    height:250px;
+    background:#fff; border-radius:20px;
+}
+main .profile_bg .profile .bottom .skill_title .skill .icon {
+    text-align:center; background:#eee;
+    border-radius:20px 20px 0 0; height:100px;
+    display:flex;
+}
+main .profile_bg .profile .bottom .skill_title .skill .icon a.active {
+    background:#fff; border-radius:20px 20px 0 0;
+}
+main .profile_bg .profile .bottom .skill_title .skill .icon a {
+    width:100px; height:100px; cursor: pointer;
+    display:inline-block; padding-top:25px;
+}
+main .profile_bg .profile .bottom .skill_title .skill .icon a img {}
+main .profile_bg .profile .bottom .skill_title .skill .skill_contents {
+    text-align:center; margin-top:50px;
+}
+main .profile_bg .profile .bottom .skill_title .skill .skill_contents p {
+    line-height:25px;
 }
