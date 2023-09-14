@@ -28,35 +28,32 @@ main .home {
     background:url(../images/1bg.png);
     background-size:cover;
     overflow:hidden;
+    height:100vh;
 }
 main .home .home_bg {
+    background:aqua;
     width:1200px; margin:0 auto;
-    position:relative;
 }
 main .home .home_bg .main_img {
-    margin-top:100px; width:1200px;
+    position:relative;
 }
 main .home .home_bg .main_img .home_img {
-    position:absolute; right:0;
-    z-index:1;
+    
 }
 main .home .home_bg .main_img .cloud1 {
-    z-index:2; animation: star 2s linear alternate-reverse infinite;
+    
 }
 main .home .home_bg .main_img .cloud2 {
-    position:absolute; right:900px; top:200px;
-    z-index:2; animation: star 2s linear alternate infinite;
+    
 }
 main .home .home_bg .main_img .star1 {
-    position:absolute; right:0;
-    z-index:2; animation: star 2s linear alternate infinite;
+    
 }
 main .home .home_bg .main_img .star2 {
-    position:absolute; right:1000px; top:100px;
-    z-index:2; animation: scale 2s linear alternate infinite;
+    animation: scale 2s linear alternate infinite;
 }
 main .home .home_bg .txt {
-    margin-top:300px; font-size:3.157rem;
+    font-size:3.157rem;
     line-height:70px; font-weight:700;
 }
 @keyframes star {
@@ -67,6 +64,3 @@ main .home .home_bg .txt {
     0% {transform:scale(0.5);}
     100% {transform:scale(1);}
 }
-/* section2 */
-main .profile {}
-main .profile .s2 {}
