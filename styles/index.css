@@ -168,18 +168,20 @@ main .web_bg {
 }
 main .web_bg .web {
     height:100%; width:1440px;
-    margin:0 auto; position:relative; top:400px;
+    margin:0 auto; position:relative; top:350px;
 }
 main .web_bg .web #web-slide {}
 main .web_bg .web #web-slide .swiper-wrapper {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide {
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project {
     display:flex;
 }
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide > p {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide > p img {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info h1 {
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project > p {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project > p img {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project .info {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project .info h1 {
+    font-size:3.rem;
 }
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info > p {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info .btn {}
-main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info .btn > p {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project .info > p {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project .info .btn {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .project .info .btn a {}
