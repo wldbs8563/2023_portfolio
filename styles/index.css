@@ -136,7 +136,7 @@ main .profile_bg .profile .bottom .skill_title {
 }
 main .profile_bg .profile .bottom .skill_title > p {
     font-size:1.777rem; font-weight:700;
-    margin-bottom:30px;
+    margin-bottom:33px;
 }
 main .profile_bg .profile .bottom .skill_title .skill {
     height:250px;
@@ -161,3 +161,25 @@ main .profile_bg .profile .bottom .skill_title .skill .skill_contents {
 main .profile_bg .profile .bottom .skill_title .skill .skill_contents p {
     line-height:25px;
 }
+/* section3 */
+main .web_bg {
+    background:#FFF2E7 url(../images/2bg.png);
+    height:100vh; position:relative; top:-100px;
+}
+main .web_bg .web {
+    height:100%; width:1440px;
+    margin:0 auto; position:relative; top:400px;
+}
+main .web_bg .web #web-slide {}
+main .web_bg .web #web-slide .swiper-wrapper {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide {
+    display:flex;
+}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide > p {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide > p img {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info h1 {
+}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info > p {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info .btn {}
+main .web_bg .web #web-slide .swiper-wrapper .swiper-slide .info .btn > p {}
