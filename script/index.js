@@ -41,5 +41,35 @@ design_a.forEach(function(t,i,a){
 popup_design.addEventListener('click',function(){
     popup_design.style.display='none'
 })
+const btn = document.querySelectorAll('.d3 .btn button')
+const card_news = document.querySelectorAll('.d3 .card_news div')
+console.log(btn, card_news)
+card_news[1].style.display='none'
+btn.forEach(function(t,i){
+    t.addEventListener('click',function(e){
+        e.preventDefault()
+        for(let j of btn){j.classList.remove('d_active')}
+        t.classList.add('d_active')
+        for(let n of card_news){n.style.display='none'}
+        card_news[i].style.display='flex'
+    })
+})
+const scroll = document.querySelectorAll('.h_bg .right a')
+scroll[0].addEventListener('click',function(e){
+    e.preventDefault()
+    window.scrollTo(0,0)
+})
+scroll[1].addEventListener('click',function(e){
+    e.preventDefault()
+    window.scrollTo(0,950)
+})
+scroll[2].addEventListener('click',function(e){
+    e.preventDefault()
+    window.scrollTo(0,1900)
+})
+scroll[3].addEventListener('click',function(e){
+    e.preventDefault()
+    window.scrollTo(0,3000)
+})
 
 

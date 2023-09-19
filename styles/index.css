@@ -97,8 +97,13 @@ main .profile_bg .profile {
 main .profile_bg .profile .top {
     display:flex; align-items:center;
 }
-main .profile_bg .profile .top > p {}
-main .profile_bg .profile .top > p img {border-radius:50%;}
+main .profile_bg .profile .top > p {
+    width:400px; height:400px;
+}
+main .profile_bg .profile .top > p img {
+    width:100%; filter: brightness(130%);
+    border-radius:30px;
+}
 main .profile_bg .profile .top .t_contents {
     margin-left:68px;
 }
@@ -205,7 +210,7 @@ main .web_bg .web #web_slide .swiper-wrapper .swiper-slide .project .info .btn a
 /* section 4 */
 main .design_bg {
     background:#E7F6FF url(../images/3bg.png);
-    height:120vh; position:relative; top:-100px;
+    height:120vh; margin-top:-100px;
 }
 main .design_bg .design {
     width:1440px; margin:0 auto;
@@ -220,7 +225,10 @@ main .design_bg .design .d_contents a {
     font-family: 'Gamja Flower', cursive;
     border-radius:100px;
 }
-main .design_bg .design a.d_active {background:#3EB6FF; color:#fff;}
+main .design_bg .design a.d_active {
+    background:#3EB6FF; color:#fff;
+    scale:1.5; transition:all 0.5s;
+}
 main .design_bg .design .d_contents a:nth-child(1) {top:400px;}
 main .design_bg .design .d_contents a:nth-child(2) {top:300px;}
 main .design_bg .design .d_contents a:nth-child(3) {top:400px;}
@@ -257,20 +265,20 @@ main .design_bg .design .d3 {
     position:relative; top:500px;
 }
 main .design_bg .design .d3 .btn {
-    margin-bottom:20px;
+    margin-bottom:50px;
 }
-main .design_bg .design .d3 .btn a {
-    display:inline-block; width:100px;
-    padding:10px 0; background:#E7F6FF;
+main .design_bg .design .d3 .btn button {
+    display:inline-block; border-radius:10px;
+    padding:10px 30px; background:#E7F6FF;
     font-family: 'Gamja Flower', cursive;
-    font-size:1.2rem; text-align:center;
+    font-size:2.3rem; text-align:center;
 }
-main .design_bg .design .d3 .card_news {
+main .design_bg .design .d3 .btn button.d_active {background:#3EB6FF; color:#fff;}
+main .design_bg .design .d3 .card_news {}
+main .design_bg .design .d3 .card_news .news1 {
     width:1440px; margin:0 auto;
-    display:flex; justify-content: flex-start;
-    position:relative;
+    display:flex; justify-content: space-between;
 }
-main .design_bg .design .d3 .card_news .news1 a {}
 main .design_bg .design .d3 .card_news .news1 a img {}
 main .design_bg .design .d3 .news1 a,
 main .design_bg .design .d3 .news2 a {
@@ -280,6 +288,8 @@ main .design_bg .design .d3 .news1 a img,
 main .design_bg .design .d3 .news2 a img {width:100%;}
 main .design_bg .design .d3 .news2 {
     margin-top:20px;
+    width:1440px; margin:0 auto;
+    display:flex; justify-content: space-between;
 }
 /* d4 */
 main .design_bg .design .d4 {
@@ -298,12 +308,11 @@ main .design_bg .design .popup_design {
 }
 main .design_bg .design .popup_design .design_contents {
     width:800px; position:absolute;
-    height:800px;
+    height:820px;
     overflow-y:auto;
     left:50%; top:50%;
     transform: translate(-50%, -50%);
 }
-main .design_bg .design .popup_design .design_contents img {
-    width:100%;
-    
-}
+main .design_bg .design .popup_design .design_contents img {width:100%;}
+.design_img a {filter:grayscale(100%);}
+.design_img a:hover {filter: grayscale(0);}
