@@ -42,23 +42,7 @@ main .home_bg .home .main_img {
     position:relative;
 }
 main .home_bg .home .main_img .home_img {
-    margin:20px 0 0 300px;
-}
-main .home_bg .home .main_img .cloud1 {
-    position:absolute; left:50px; top:100px;
-    animation: move 2s linear alternate infinite;
-}
-main .home_bg .home .main_img .cloud2 {
-    position:absolute; left:200px; top:0;
-    animation: move 2s linear alternate-reverse infinite;
-}
-main .home_bg .home .main_img .star1 {
-    position:absolute; right:30px; top:50px;
-    animation: scale 2s linear alternate infinite;
-}
-main .home_bg .home .main_img .star2 {
-    position:absolute; left:290px; top:150px;
-    animation: scale 2s linear alternate infinite;
+    margin-top:50px;
 }
 main .home_bg .home .txt_title {
     position:relative;
@@ -71,7 +55,7 @@ main .home_bg .home .txt_title .txt {
 main .home_bg .home .txt_title #web_txt {
     background:url(../images/web.png) repeat-x;
     width:100%; height:100px;
-    position:absolute; z-index:1;
+    position:absolute;
     animation:web 100s linear alternate infinite ;
 }
 @keyframes move {
