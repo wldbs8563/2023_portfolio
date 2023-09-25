@@ -160,11 +160,12 @@ main .web_bg .web {
     height:100%; width:1440px;
     margin:0 auto; position:relative; top:350px;
 }
-main .web_bg .web > p {
-    margin-left:130px; margin-bottom:100px;
-    font-size:1.2rem;
+main .web_bg .web > p {margin-left:130px; margin-bottom:100px;}
+main .web_bg .web > p span {
+    
+    font-size:2rem;font-family:'Gamja Flower', cursive;
 }
-main .web_bg .web p em {font-size:4rem; font-weight:700;font-family: 'Gasoek One', sans-serif;}
+main .web_bg .web p em {font-size:4.5rem; font-weight:700;}
 main .web_bg .web #web_slide {}
 main .web_bg .web #web_slide .swiper-wrapper {}
 main .web_bg .web #web_slide .swiper-wrapper .swiper-slide {}
